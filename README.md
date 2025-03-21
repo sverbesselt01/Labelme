@@ -1,4 +1,4 @@
-# AI for orthomosaics
+# Labeling orthomosaics semi-automatically in labelme
 
 ### Requirements
 - Pycharm (community edition)
