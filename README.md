@@ -23,5 +23,3 @@ pip install -r requirements.txt
 4. Label the images using labelme.
 5. Convert_json_to_polygons.py: make shape file with labels.
 6. Merge the alive trees and dead trees, dissolve boundaries. Make sure the dead trees are on top of the alive trees (shape_labels_merging.model3 script in QGIS). 
-7. Scatterplot_and_correlation.py: Calculate the amount (in %) of dead trees, alive trees, soil for every tile do correlation between segemented trees (labelme) and result Thomas (NDVI thresholds + CHM threshold).
-
