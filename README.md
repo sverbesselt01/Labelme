@@ -6,7 +6,7 @@
 - QGis 3.40.4
 
 ### Install python modules
-1. Open terminal
+1. Open terminal in Pycharm. Make sure your (pip) environment is activated and that your are in the directory where your requirements.txt is located. 
 2. Type following command in the terminal
 ~~~shell
 pip install -r requirements.txt
