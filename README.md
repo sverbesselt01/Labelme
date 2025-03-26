@@ -20,6 +20,13 @@ pip install -r requirements.txt
 2. correctRaster.py: remove empty boxes (with no pixels).
 3. In QGIS: Make a copy of your tile file and select the tiles that have a dead tree within the tile (data of Thomas).
 4. extractTiles.py: crop the orthomosaic to the extent of every box.
-4. Label the images using labelme.
-5. Convert_json_to_polygons.py: make shape file with labels.
-6. Merge the alive trees and dead trees, dissolve boundaries. Make sure the dead trees are on top of the alive trees (shape_labels_merging.model3 script in QGIS). 
+5. Label the images using labelme. Type following command in the terminal
+~~~shell
+labelme ./Images/FC --labels labels.txt --nodata --validatelabel exact --config '{shift_auto_shape_color: -2}'
+~~~
+or reference directly to your folder and add your pre-defined labels.
+~~~shell
+labelme ./Images/FC --labels labels.txt --nodata --validatelabel exact --config '{shift_auto_shape_color: -2}'
+~~~
+6. Convert_json_to_polygons.py: make shape file with labels.
+7. Merge the alive trees and dead trees, dissolve boundaries. Make sure the dead trees are on top of the alive trees (shape_labels_merging.model3 script in QGIS). 
