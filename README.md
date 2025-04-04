@@ -1,9 +1,9 @@
 # Labeling orthomosaics semi-automatically in labelme
 
 ### Requirements
-- Pycharm (community edition)
-- Python 3.12
-- QGis 3.40.4
+- Pycharm (community edition) or Visual studio
+- Python 3.12 (or 3.13, but then the requirements file must be updated).
+- QGIS (e.g. 3.40.4)
 
 ### Install python modules
 1. Open terminal in Pycharm. Make sure your (pip) environment is activated and that your are in the directory where your requirements.txt is located. 
